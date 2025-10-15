@@ -4,5 +4,6 @@ public class Main {
         System.out.println("Iniciando programa de operadores");
         Operadores operadores = new Operadores();
         operadores.operadoresAritmeticos();
+        System.out.println("Hola Diego");
     }
 }
