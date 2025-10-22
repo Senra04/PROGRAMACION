@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Operadores {
     public void operadoresAritmeticos() {
         //unarios
@@ -91,5 +93,30 @@ public class Operadores {
         boolean resultado = sueldo<=20000 && edad<40 && conducir;
         System.out.println("Evaluando al candidato"+nombre);
         System.out.println("la evaluacion del candidato es "+resultado);
+    }
+
+
+    public void ejercicioNotion10Tema2(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Indica el salario base ");
+        int salarioBaseHora = scanner.nextInt();
+        System.out.println("Indica horas trabajadas ");
+        int horasTrabajadas = scanner.nextInt();
+        System.out.println("Has realizado horas extras?");
+        boolean horasExtras= scanner.nextBoolean();
+
+        boolean condicionExtras= horasTrabajadas>40 && horasExtras;
+        // si condicionExtras es true
+        int salarioBase = 40*salarioBaseHora;
+        int horasExtrasTotal = horasTrabajadas -40;
+        int salarioBaseExtra = horasExtrasTotal * salarioBaseHora+2;
+        int salarioTotal = salarioBase+salarioBaseExtra;
+        System.out.println("Has cobrado un total de "+salarioTotal);
+        System.out.println("Has cobrado un base de "+salarioBase);
+        System.out.println("Has cobrado un extra de "+salarioBaseExtra);
+        // en caso contrario
+
+        salarioBase= 40*salarioBaseHora;
+
     }
 }
