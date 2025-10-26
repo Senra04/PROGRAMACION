@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Operadores {
     public void operadoresAritmeticos() {
         //unarios
@@ -57,7 +59,7 @@ public class Operadores {
         operadorUno %= 2;
         System.out.println("El valor de operadorUno es "+operadorUno);
     }
-    //
+
     public void operadoresComparacion(){
         int operadorUno = 10;
         int operadorDos = 20;
@@ -91,5 +93,68 @@ public class Operadores {
         boolean resultado = sueldo<=20000 && edad<40 && conducir;
         System.out.println("Evaluando al candidato"+nombre);
         System.out.println("la evaluacion del candidato es "+resultado);
+    }
+
+    public void cambiosTipos(){
+        double numeroDecimal = 5.98;
+        int numeroEntero = 7;
+        System.out.println(numeroDecimal);
+        System.out.println((int)numeroDecimal); // Casteo, momentaneamente paso un decimal a entero
+        System.out.println(numeroEntero);
+        System.out.println((double) numeroEntero); // Casteo
+
+        String palabra ="12";    // Parseo, hemos forzado convertir la palabra 12 a numero
+        int numeroPalabra = Integer.valueOf(palabra);
+        System.out.println(numeroPalabra+10);
+
+        String palabraBool ="true";
+        boolean palabraBolean = Boolean.parseBoolean(palabraBool);
+        System.out.println(palabraBolean);
+
+        /*int numeroEvaluar = "12345";
+        String numeroEvaluarStr = String.valueOf(numeroEvaluar);
+
+
+        boolean acierto = true;
+        String aciertoStr = String.valueOf(acierto);*/
+
+
+    }
+
+    public void ejercicioNotion4(){
+    Scanner scanner = new Scanner(System.in);
+        System.out.println("Que numero quieres comprobar si es par ");
+        int numero = scanner.nextInt();
+        boolean numeroPar = numero%2==0;
+        //System.out.println("El numero es par: "+numeroPar);
+        System.out.printf("El numero %d es par: %b ", numero,numeroPar);
+    scanner.close();
+    }
+
+    public void ejercicioNotion10Tema2(){
+
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("Indica el salario base: ");
+        int salarioBaseHora = scanner.nextInt();
+        System.out.println("Indica horas trabajadas: ");
+        int horasTrabajadas = scanner.nextInt();
+        System.out.println("Has realizado horas extras: ");
+        boolean horasExtras = scanner.nextBoolean();
+
+        boolean condicionExtras = horasTrabajadas>40 && horasExtras;
+        // si condicionExtras es true
+
+            int horasExtrasTotal = horasTrabajadas -40;
+            int salarioBase = 40 * salarioBaseHora;
+            int salarioBaseExtra = horasExtrasTotal*salarioBaseHora*2;
+            int salarioTotal = salarioBase + salarioBaseExtra;
+            System.out.println("Has cobrado un total de: "+salarioTotal);
+            System.out.println("Has cobrado un base de : "+salarioBase);
+            System.out.println("Has cobrado un extra de : "+salarioBaseExtra);
+
+            salarioBase = 40*salarioBaseHora;
+
+
+       scanner.close();
     }
 }

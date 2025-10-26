@@ -10,7 +10,7 @@ public class Main {
         //operacionesVariable.operadoresComparacion;
         //operacionesVariable.operadoresLogicos;
         // BufferedReader
-        Scanner lectorTeclado = new Scanner(System.in);
+       /* Scanner lectorTeclado = new Scanner(System.in);
         System.out.println("Dime tu nombre");
         String nombre = lectorTeclado.nextLine();
         System.out.println("Que salario quieres ganar");
@@ -19,6 +19,10 @@ public class Main {
         int edad = lectorTeclado.nextInt();
         System.out.println("Tienes permiso de conducir");
         boolean conducir = lectorTeclado.nextBoolean();
-        operacionesVariable.evaluarCandidato(salarioEntrada, edad, conducir,nombre);}
+        operacionesVariable.evaluarCandidato(salarioEntrada, edad, conducir,nombre);*/
+        //operacionesVariable.cambiosTipos();
+        //operacionesVariable.ejercicioNotion4();
+        operacionesVariable.ejercicioNotion10Tema2();
+    }
     }
  
