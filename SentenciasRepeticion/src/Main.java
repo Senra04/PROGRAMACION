@@ -10,7 +10,8 @@ public class Main {
         }*/
         // operaciones.tablaMultiplicarNumero(8);
         // operaciones.todasTablas();
-        operaciones.dibujarCuadrado();
+        //operaciones.dibujarCuadrado();
+        operaciones.palabraPalindromo();
 
     }
 }
