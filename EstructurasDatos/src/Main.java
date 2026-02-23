@@ -73,5 +73,23 @@ public class Main {
         }
         System.out.println("El sumatorio de los numeros es " + sumatorio);
 
+        System.out.println("Imprimiendo palabras");
+        //String[] palabras = new String[]{"Hola", "Adios", "Programacion", "Clase", "Java"};
+
+        String[] palabras = new String[]{null, null, "hola", null, "adios"};
+        //null,null,null,null,null
+
+        /*for (String item : palabras) {
+            System.out.println(item);
+        }*/
+        //System.out.println("La palabra aleatoria es: " + palabras[(int) (Math.random() * palabras.length)]);
+        //Quiero saber si la palabra hola esta en el array
+        for (String item : palabras) {
+            if (item != null && item.equals("hola")) {
+                System.out.println("Encontrado");
+            }
+            ;
+
+        }
     }
 }
