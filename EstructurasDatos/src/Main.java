@@ -68,7 +68,7 @@ public class Main {
             sumatorio += listaNumeros[i];
         }*/
         for (int item : listaNumeros) {
-            System.out.println("Ejecutando valor "+item);
+            System.out.println("Ejecutando valor " + item);
             sumatorio += item;
         }
         System.out.println("El sumatorio de los numeros es " + sumatorio);
