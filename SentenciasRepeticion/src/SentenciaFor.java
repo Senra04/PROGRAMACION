@@ -62,5 +62,13 @@ public class SentenciaFor {
             System.out.println();
         }
     }
+
+    public void palabraPalindromo() {
+        String frase = "Hola que tal estas";
+        for (int i = 0; i < frase.length(); i++) {
+
+            System.out.print(frase.charAt(i));
+        }
+    }
 }
 
